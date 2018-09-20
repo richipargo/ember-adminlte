@@ -17,6 +17,8 @@ export default Component.extend({
   name: 'name',
   searchField: 'name',
   selected: null,
+  renderInPlace: false,
+  dropdownClass: '',
   propName: computed(function(){
     return `model-${this.get('prop')}`;
   }),
